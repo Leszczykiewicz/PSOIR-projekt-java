@@ -40,7 +40,12 @@ public class Main {
         while (true) {
             final String file = getMessage("https://sqs.us-west-2.amazonaws.com/983680736795/leszczynskaSQS");
             if (file == null) {
-                break;
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                continue;
             }
             Runnable thread = new Runnable() {
 
