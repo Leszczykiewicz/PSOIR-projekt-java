@@ -33,7 +33,7 @@
         <configuration>
         <archive>
           <manifest>
-            <mainClass></mainClass>
+            <mainClass>pl.worker.Main</mainClass>
           </manifest>
         </archive>
           <descriptorRefs>

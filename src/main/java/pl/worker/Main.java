@@ -1,3 +1,5 @@
+package pl.worker;
+
 
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;

@@ -1,0 +1,14 @@
+language: java
+jdk:
+- openjdk7
+deploy:
+  provider: s3
+  access_key_id: AKIAJFAWTT7OQTYVYHUA
+  secret_access_key:
+    secure: kDSlQfcETt79j1mvl4f0vyx2qIMkOsNx63o+nZtP5pTc8KTkzQ/ozZBBJoKY/hWQ/olQMGb/kOHjb3oclPdLxKvv7+oz7FiO/T2mhJHnUCnk0zWW5VQ4dKS8hHZC+YGGw4dDD1mUaM7YRbFq9t97FUrArmXZFDbh61Lcbzcj83daPu5WLhGTXoixlZsue5AvTyf2BYF5A1CVs8CrPb3a2fi65yDPvWyLKFBuy36ta9I6JZzyf21vaWgYM21jF+kChwfcQhUt19DpLudf2TVAo1gG6fuXpRG+D2lh8FnEGVwIh6sL5zAFCnqiIJaUTTGLkaUBjTGtbBKy7LpXAqA6m0yiwEhA10YpPXi3zObEScVG2zgiiwMQ0fgH013vvFliaUWCwJwZQcEJgfenHLZqNHzCDRbDPTUOTCyzl+nHT6ymbQzlu8FLo5pAqrLAGHKVs960cYsbtIgMKjr/DpNmZm9QeKoJ3G8k7TrQs/Pd5ucC0Ipr5IX7K+ATG+y4rOFXXBQ0dqUtCJtwcWqQnSRY6nPRDBNM33npAQVQs36X9MEpWtXDjEx0fOcRtaDq6bFZyiQEYHztBLbfBF04ogriwQtNLCfS9iFZXTeBKGLcz9wLKFK7F9DBnnMQpzdnQ5MCgIr0BLPZQkfjzJKZ6W/9gmgBdKR4g0SScNaS4RY8z2k=
+  bucket: deploy-weeia
+  skip_cleanup: true 
+  upload-dir: agnieszka.leszczynska.worker
+  acl: private
+  on:
+    repo: Leszczykiewicz/PSOIR-projekt-java
